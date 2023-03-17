@@ -3,21 +3,21 @@
     <head>
         {% block head %}
             <link rel="stylesheet" href="style.css">
-             <title>{% block title %}{% endblock %} test</title>
+             <title>{% block title %}{% endblock %} Bài 2</title>
 
         {% endblock %}
     </head>
     <body>
         {% block content %}
-        <a href="./index.php?action=add">them</a>
+        <a href="./index.php?action=add">Thêm User</a>
         <table border="1" style="width: 80%;">
             <thead>
                 <tr>
-                    <td>id</td>
-                    <td>user</td>
-                    <td>email</td>
-                    <td>sua</td>
-                    <td>xoa</td>
+                    <td>ID</td>
+                    <td>User Name</td>
+                    <td>Email</td>
+                    <td>Sửa</td>
+                    <td>Xóa</td>
                 </tr>
             </thead>
             <tbody>
@@ -26,8 +26,8 @@
                     <td>{{user.id}}</td>
                     <td>{{user.name}}</td>
                     <td>{{user.email}}</td>
-                    <td><a href="./index.php?action=edit&id={{user.id}}">sua</a></td>
-                    <td><a href="./index.php?action=delete&id={{user.id}}">xoa</a></td>              
+                    <td><a href="./index.php?action=edit&id={{user.id}}">Sửa</a></td>
+                    <td><a href="./index.php?action=delete&id={{user.id}}">Xóa</a></td>              
                 </tr>
                 {% endfor %}
             </tbody>
