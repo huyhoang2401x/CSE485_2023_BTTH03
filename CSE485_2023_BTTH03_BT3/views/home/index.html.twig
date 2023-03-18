@@ -14,7 +14,7 @@
             <div class="container-fluid">
                 <div class="my-logo">
                     <a class="navbar-brand" href="#">
-                        <img src="/CSE485_2023_BTTH03_test/views/images/logo2.png" alt="" class="img-fluid">
+                        <img src="/CSE485_2023_BTTH03/bai_3/views/image/logo2.png" alt="" class="img-fluid">
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,10 +23,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{'http://localhost:8080/CSE485_2023_BTTH03_test'}}">Trang chủ</a>
+                    <a class="nav-link active" aria-current="page" href="{{'http://localhost/CSE485_2023_BTTH03/bai_3'}}">Trang chủ</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="{{'http://localhost:8080/CSE485_2023_BTTH03_test/index.php?controller=home&action=login' }}">Đăng nhập</a>
+                    <a class="nav-link" href="{{'http://localhost/CSE485_2023_BTTH03/bai_3/index.php?controller=member&action=home' }}">Đăng nhập</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -45,13 +45,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src="/CSE485_2023_BTTH03_test/views/images/slideshow/slide01.jpg" class="d-block w-100" alt="...">
+                <img src="/CSE485_2023_BTTH03/bai_3/views/image/slideshow/slide01.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img src="/CSE485_2023_BTTH03_test/views/images/slideshow/slide02.jpg" class="d-block w-100" alt="...">
+                <img src="/CSE485_2023_BTTH03/bai_3/views/image/slideshow/slide02.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img src="/CSE485_2023_BTTH03_test/views/images/slideshow/slide03.jpg" class="d-block w-100" alt="...">
+                <img src="/CSE485_2023_BTTH03/bai_3/views/image/slideshow/slide03.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -71,10 +71,10 @@
             {% for article in articles %}
                 <div class="col-sm-3">
                 <div class="card mb-2" style="width: 100%;">
-                    <img src="/CSE485_2023_BTTH03_test/views/images/songs/{{article.hinhanh}}" class="card-img-top" alt="...">
+                    <img src="/CSE485_2023_BTTH03/bai_3/views/image/songs/{{article.image}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center">
-                            <a href="./index.php?controller=home&action=detail&id={{article.ma_bviet}}" class="text-decoration-none">{{article.ten_bhat}}</a>
+                            <a href="./index.php?controller=home&action=detail&sid={{article.article_id}}" class="text-decoration-none">{{article.song_name}}</a>
                         </h5>
                     </div>
                 </div>

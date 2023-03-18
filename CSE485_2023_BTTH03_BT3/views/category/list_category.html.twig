@@ -17,7 +17,7 @@
 				</thead>
 				<tbody>
 					{% set count = 0 %}
-					{% for category in categorys %}
+					{% for category in categories %}
 						{% set count = count + 1 %}
 						<tr>
 							<th scope="row">
@@ -35,7 +35,7 @@
 								</a>
 							</td>
 							<td>
-								<a onclick="return confirm('Ban co muon xoa khong');" href="/CSE485_2023_BTTH02/index.php?controller=category&action=delete&id={{category.ma_tloai}}">
+								<a onclick="return confirm('Ban co muon xoa khong');" href="/CSE485_2023_BTTH03/bai_3/index.php?controller=category&action=delete&id={{category.ma_tloai}}">
 									<i class="fa-solid fa-trash"></i>
 								</a>
 							</td>

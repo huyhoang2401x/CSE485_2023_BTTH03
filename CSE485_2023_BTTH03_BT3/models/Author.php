@@ -1,38 +1,43 @@
 <?php
-class Author{
+class Author
+{
     // Thuộc tính
 
-    private $ma_tgia;
-    private $ten_tgia;
-    private $hinh_tgia;
+    private $author_id;
+    private $author_name;
+    private $author_pic;
 
 
-    public function __construct($ma_tgia, $ten_tgia,$hinh_tgia){
-        $this->ma_tgia = $ma_tgia;
-        $this->ten_tgia = $ten_tgia;
-        $this->hinh_tgia = $hinh_tgia;
+    public function __construct($author_id, $author_name,$author_pic)
+    {
+        $this->author_id = $author_id;
+        $this->author_name = $author_name;
+        $this->author_pic = $author_pic;
     }
 
     // Setter và Getter
-    public function getMa_tgia(){
-        return $this->ma_tgia;
+    public function getAuthor_id()
+    {
+        return $this->author_id;
     }
-    public function setMa_tgia($ma_tgia){
-        $this->ma_tgia = $ma_tgia;
+    public function setAuthor_id($author_id)
+    {
+        $this->author_id = $author_id;
     }
-
-    public function getTen_tgia(){
-        return $this->ten_tgia;
+    public function getAuthor_name()
+    {
+        return $this->author_name;
     }
-    public function setTen_tgia($ten_tgia){
-        $this->ten_tgia = $ten_tgia;
+    public function setAuthor_name($author_name)
+    {
+        $this->author_name = $author_name;
     }
-
-    public function getHinh_tgia(){
-        return $this->hinh_tgia;
+    public function getAuthor_pic()
+    {
+        return $this->author_pic;
     }
-    public function setHinh_tgia($hinh_tgia){
-        $this->hinh_tgia = $hinh_tgia;
+    public function setAuthor_pic($author_pic)
+    {
+        $this->author_pic = $author_pic;
     }
-
 }

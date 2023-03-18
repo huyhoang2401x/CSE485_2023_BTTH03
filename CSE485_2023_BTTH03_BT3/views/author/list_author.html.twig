@@ -24,18 +24,18 @@
 								{{count}}
 							</th>
 							<td>
-								{{author.ten_tgia}}
+								{{author.author_name}}
 							</td>
 							<td>
-								<img style="width: 100px;" src="/CSE485_2023_BTTH03_test/views/images/authors/{{author.hinh_tgia}}">
+								<img style="width: 100px;" src="/CSE485_2023_BTTH03/bai_3/views/image/tacgia/{{author.author_pic}}">
 							</td>
 							<td>
-								<a href="index.php?controller=author&action=edit&id={{author.ma_tgia}}">
+								<a href="index.php?controller=author&action=view_edit&id={{author.author_id}}">
 									<i class="fa-solid fa-pen-to-square"></i>
 								</a>
 							</td>
 							<td>
-								<a onclick="return confirm('Ban co muon xoa khong');" href="/CSE485_2023_BTTH03_test/index.php?controller=author&action=delete&id={{author.ma_tgia}}">
+								<a onclick="return confirm('Ban co muon xoa khong');" href="/CSE485_2023_BTTH03/bai_3/index.php?controller=author&action=delete&id={{author.author_id}}">
 									<i class="fa-solid fa-trash"></i>
 								</a>
 							</td>
